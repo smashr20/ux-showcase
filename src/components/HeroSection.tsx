@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -10,21 +11,28 @@ const HeroSection = () => {
       <div className="absolute top-1/2 right-1/4 w-48 h-48 rounded-full bg-cyan/10 blur-3xl animate-pulse-glow" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 text-center">
-        <p className="text-sm md:text-base font-medium tracking-[0.3em] uppercase text-muted-foreground mb-6 opacity-0 animate-fade-in-up">
+        <div className="flex justify-center mb-8 opacity-0 animate-fade-in-up">
+          <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/50 glow-primary">
+            <AvatarImage src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Rahul Sharma" />
+            <AvatarFallback className="text-3xl font-display font-bold bg-muted text-foreground">RS</AvatarFallback>
+          </Avatar>
+        </div>
+
+        <p className="text-sm md:text-base font-medium tracking-[0.3em] uppercase text-muted-foreground mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
           UX Designer · Product Thinker · Creative Problem Solver
         </p>
 
-        <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold leading-[0.9] mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-          <span className="text-foreground">Jane</span>
+        <h1 className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold leading-[0.9] mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <span className="text-foreground">Rahul</span>
           <br />
-          <span className="text-gradient">Doe</span>
+          <span className="text-gradient">Sharma</span>
         </h1>
 
-        <p className="max-w-xl mx-auto text-lg md:text-xl text-muted-foreground mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+        <p className="max-w-xl mx-auto text-lg md:text-xl text-muted-foreground mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
           Crafting intuitive digital experiences that bridge user needs and business goals — one pixel at a time.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/80 text-primary-foreground text-base px-8 glow-primary">
             <a href="#projects">View My Work</a>
           </Button>
