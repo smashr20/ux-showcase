@@ -47,7 +47,7 @@ const ProjectsSection = () => {
           {projects.map((project, i) => (
             <Card
               key={project.title}
-              className={`group bg-gradient-card border-border hover:border-${project.color}/40 transition-all duration-500 hover:-translate-y-2 overflow-hidden`}
+              className={`group bg-gradient-card border-border hover:border-${project.color}/40 transition-all duration-500 hover:-translate-y-2 overflow-hidden shadow-[0_0_40px_hsl(var(--primary)/0.12),0_0_80px_hsl(var(--primary)/0.06)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.2),0_0_100px_hsl(var(--primary)/0.1)]`}
             >
               {/* Thumbnail placeholder */}
               <div className={`h-48 bg-muted/30 flex items-center justify-center relative overflow-hidden`}>
