@@ -1,12 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
+import maayariThumb from "@/assets/maayari-thumb.jpg";
+import melodicmindThumb from "@/assets/melodicmind-thumb.png";
 
 const projects = [
   {
     title: "The Melodic Mind Studio",
     client: "The Melodic Mind",
     link: "https://www.themelodicmind.com/studio",
+    thumbnail: melodicmindThumb,
     description: "Crafted a vibrant, animated UX design for an artist-based platform where followers can download and learn songs and tabs — delivering an energetic, immersive experience that keeps musicians engaged.",
     role: "UX/UI Designer",
     deliverables: ["User Research", "Visual Design", "Animation", "Prototyping"],
@@ -17,6 +20,7 @@ const projects = [
     title: "Maayari",
     client: "Maayari",
     link: "https://maayari.com",
+    thumbnail: maayariThumb,
     description: "Designed a clean, professional, and minimal website focused on clarity and elegance — ensuring the brand's message comes through without distraction.",
     role: "UX/UI Designer",
     deliverables: ["Wireframes", "UI Design", "Responsive Design", "Developer Handoff"],
@@ -27,6 +31,7 @@ const projects = [
     title: "Paul Davids Guitar",
     client: "Paul Davids",
     link: "https://pauldavidsguitar.com",
+    thumbnail: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80",
     description: "Created an intuitive, easy-to-navigate e-commerce website for a personalised guitar brand — making product discovery and purchasing effortless for customers.",
     role: "UX/UI Designer",
     deliverables: ["Information Architecture", "UI Design", "Usability Testing", "E-commerce UX"],
@@ -54,10 +59,8 @@ const ProjectsSection = () => {
             >
               {/* Thumbnail placeholder */}
               <div className={`h-48 bg-muted/30 flex items-center justify-center relative overflow-hidden`}>
+                <img src={project.thumbnail} alt={project.title} className="w-full h-full object-cover" />
                 <div className={`absolute inset-0 bg-gradient-to-br from-${project.color}/20 to-transparent shadow-[inset_0_0_60px_hsl(var(--primary)/0.15)]`} />
-                <span className="font-display text-6xl font-bold text-muted-foreground/20 select-none">
-                  0{i + 1}
-                </span>
               </div>
 
               <CardContent className="p-6 space-y-4">
