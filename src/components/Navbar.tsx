@@ -72,9 +72,11 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <Button size="sm" className="mt-2 w-full bg-primary hover:bg-primary/80 gap-2">
-            <Download className="w-4 h-4" />
-            Resume
+          <Button asChild size="sm" className="mt-2 w-full bg-primary hover:bg-primary/80 gap-2">
+            <a href="/Rahul_sharma_Profile.pdf" download>
+              <Download className="w-4 h-4" />
+              Resume
+            </a>
           </Button>
         </div>
       )}
