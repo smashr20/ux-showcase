@@ -86,6 +86,7 @@ const ProjectsSection = () => {
                 </div>
               </CardContent>
             </Card>
+            </a>
           ))}
         </div>
       </div>
