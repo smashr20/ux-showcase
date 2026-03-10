@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Rahul Sharma Portfolio
 
 Personal portfolio built with React, TypeScript, Vite, Tailwind CSS, and shadcn/ui.
@@ -27,3 +28,6 @@ This repository includes a Pages workflow at `.github/workflows/deploy.yml`.
 
 After a successful workflow run, your site will be available at:
 `https://<your-username>.github.io/<your-repo>/`
+=======
+# ux-showcase
+>>>>>>> 44321cdd925b160f6107f849cb0f3f5ad2c46004
