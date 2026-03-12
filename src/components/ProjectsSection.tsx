@@ -29,14 +29,14 @@ const projects = [
   },
   {
     title: "Girl Power Talk",
-    client: "GPT",
-    link: "https://girlpowertalk.com",
-    thumbnail: melodicmindThumb,
-    description: "I designed the global digital platform for Girl Power Talk, a B Corp-style movement empowering young leaders. My work involved bridging the gap between social impact and modern web performance, delivering an engaging, mobile-first experience that amplifies diverse voices and supports global talent acquisition.",
-    role: "UX/UI Designer",
-    deliverables: ["Lo-Fi Wireframes", "UI Design", "Sitemaps"],
-    color: "accent" as const,
-    glowClass: "glow-cyan",
+client: "GPT",
+link: "https://girlpowertalk.com",
+thumbnail: "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80",
+description: "I designed the global digital platform for Girl Power Talk, a B Corp-style movement empowering young leaders. My work involved bridging the gap between social impact and modern web performance, delivering an engaging, mobile-first experience that amplifies diverse voices and supports global talent acquisition.",
+role: "UX/UI Designer",
+deliverables: ["Lo-Fi Wireframes", "UI Design", "Sitemaps"],
+color: "accent" as const,
+glowClass: "glow-cyan",
   },
 ];
 

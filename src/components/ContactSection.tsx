@@ -79,7 +79,7 @@ const ContactSection = () => {
               </a>
 
               <a
-                href="https://www.seek.com.au/profile/rahul-sharma"
+                href="https://www.seek.com.au/profiles/rahul-sharma-5L2Mhm7XSp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 text-foreground hover:text-primary transition-colors group"
