@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
 
-const resumePath = `${import.meta.env.BASE_URL}Rahul_sharma_Profile.pdf`;
+const resumePath = `${import.meta.env.BASE_URL}Rahul-WebDesigner-ImmediateJoiner.pdf`;
 
 const navLinks = [
   { label: "About", href: "#about" },
